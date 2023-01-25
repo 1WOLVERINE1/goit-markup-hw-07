@@ -15,14 +15,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="test.css" />
   </head>
   <body>
     <header class="header">
-      <div class="container header-item">
-        <a href="./index.html" class="header-logo">
-          <span class="header-logo-main">WEB</span>
-          <span class="header-logo-side">STUDIO</span>
+      <div class="container">
+        <a href="./index.html" class="logo logo--margin">
+          <span class="logo--blue">WEB</span>
+          <span class="logo--black">STUDIO</span>
         </a>
         <nav class="header-nav">
           <ul class="header-nav-list">
@@ -43,6 +43,77 @@
             <a href="tel:+110001111111" class="header-contacts-link">+11 (000) 111-11-11</a>
           </li>
         </ul>
+        <button type="button" class="menu-btn" data-menu-open>
+          <svg class="menu-icon-open" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu-btn"></use>
+          </svg>
+        </button>
+        <div class="menu is-hidden" data-menu>
+          <div class="container">
+            <button type="button" class="menu-btn-close" data-menu-close>
+              <svg class="menu-close-icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-close-black"></use>
+              </svg>
+            </button>
+            <div class="menu-top">
+              <nav class="menu-nav">
+                <ul class="menu-nav-list">
+                  <li class="menu-nav-item">
+                    <a href="./index.html" class="menu-nav-link">Studio</a>
+                  </li>
+                  <li class="menu-nav-item">
+                    <a href="./portfolio.html" class="menu-nav-link menu-selected-page"
+                      >Portfolio</a
+                    >
+                  </li>
+                  <li class="menu-nav-item">
+                    <a href="" class="menu-nav-link">Contacts</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="menu-bottom">
+              <ul class="menu-contact-list">
+                <li class="menu-contact-item tel">
+                  <a href="tel:+110001111111" class="menu-contact-tel">+11 (000) 111-11-11</a>
+                </li>
+                <li class="menu-contact-item mail">
+                  <a href="mailto:+380961111111" class="menu-contact-mail">info@devstudio.com</a>
+                </li>
+              </ul>
+              <ul class="menu-icon-list">
+                <li class="menu-icon-item">
+                  <a href="https://www.instagram.com/" target="_blank" class="menu-icon-link">
+                    <svg class="menu-icon" width="24px" height="24px">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="menu-icon-item">
+                  <a href="https://twitter.com/" target="_blank" class="menu-icon-link">
+                    <svg class="menu-icon" width="24px" height="24px">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="menu-icon-item">
+                  <a href="https://www.facebook.com/" target="_blank" class="menu-icon-link">
+                    <svg class="menu-icon" width="24px" height="24px">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="menu-icon-item">
+                  <a href="https://www.linkedin.com/" target="_blank" class="menu-icon-link">
+                    <svg class="menu-icon" width="24px" height="24px">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <main class="main">
@@ -254,9 +325,9 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-logo-content">
-          <a href="./portfolio.html" class="footer-logo">
-            <span class="footer-logo-main">WEB</span>
-            <span class="footer-logo-side">STUDIO</span>
+          <a href="./portfolio.html" class="logo">
+            <span class="logo--blue">WEB</span>
+            <span class="logo--white">STUDIO</span>
           </a>
           <p class="footer-logo-text">
             Increase the flow of customers and sales for your business with digital marketing &
