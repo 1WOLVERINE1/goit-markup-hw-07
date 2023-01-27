@@ -375,11 +375,41 @@ img {
   padding-bottom: 112px;
   background-color: #2e2f42;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(47, 47, 66, 0.7)),
-    url(../images/hero-bg-desktop.webp);
+    url(../images/hero-bg-mobile.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   text-align: center;
+}
+@media (min-device-pixel-ratio: 2) {
+  .hero {
+    background-image: linear-gradient(rgba(44, 47, 66, 0.7), rgba(47, 47, 66, 0.7)),
+      url(../images/hero-bg-mobile@2x.webp);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(47, 47, 66, 0.7)),
+      url(../images/hero-bg-tablet.webp);
+  }
+}
+@media screen and (min-width: 768px) and(min-device-pixel-ratio: 2) {
+  .hero {
+    background-image: linear-gradient(rgba(44, 47, 66, 0.7), rgba(47, 47, 66, 0.7)),
+      url(../images/hero-bg-tablet@2x.webp);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(47, 47, 66, 0.7)),
+      url(../images/hero-bg-desktop.webp);
+  }
+}
+@media screen and (min-width: 1200px) and(min-device-pixel-ratio: 2) {
+  .hero {
+    background-image: linear-gradient(rgba(44, 47, 66, 0.7), rgba(47, 47, 66, 0.7)),
+      url(../images/hero-bg-desktop@2x.webp);
+  }
 }
 @media screen and (min-width: 768px) {
   .hero {
