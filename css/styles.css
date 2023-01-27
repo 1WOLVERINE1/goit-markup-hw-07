@@ -920,7 +920,6 @@ img {
 @media screen and (min-width: 768px) {
   .footer .container {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
   }
 }
@@ -931,6 +930,11 @@ img {
 @media screen and (min-width: 768px) {
   .footer-logo-content {
     text-align: left;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-logo-content {
+    margin-left: 108px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1007,8 +1011,9 @@ img {
 .footer-icon {
   fill: #f4f4fd;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-form-content {
+    margin-left: 108px;
   }
 }
 @media screen and (min-width: 1200px) {
